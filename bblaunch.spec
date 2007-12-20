@@ -12,6 +12,7 @@ Patch0: bblaunch-0.0.3.typo.patch.bz2
 License: GPL
 Group: Graphical desktop/Other
 Url: http://blackboxwm.sourceforge.net/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: X11-devel
 
 %description
