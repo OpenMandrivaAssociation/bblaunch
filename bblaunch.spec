@@ -1,6 +1,6 @@
 %define name bblaunch
 %define version 0.0.3
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: An application launcher for Blackbox type window managers
 Name: %{name}
