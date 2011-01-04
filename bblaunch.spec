@@ -8,12 +8,12 @@ Version: %{version}
 Release: %{release}
 Source0: http://folk.uio.no/~steingrd/%{name}-%{version}.tar.bz2
 Source1: %{name}.1
-Patch0: bblaunch-0.0.3.typo.patch.bz2
+Patch0: bblaunch-0.0.3.typo.patch
 License: GPL
 Group: Graphical desktop/Other
 Url: http://blackboxwm.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: X11-devel
+BuildRequires: libx11-devel
 
 %description
 bblaunch is an application launcher that lets you set certain blackbox related
@@ -27,12 +27,13 @@ visible on all workspaces and so on and so on.
 
 %build
 # (blino) the default -O2 optimization makes bblaunch segfault
-CFLAGS="$RPM_OPT_FLAGS -O0"%configure2_5x
+export CFLAGS="%optflags -O0"
+%configure2_5x
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+%makeinstall_std
 install -d -m 755 ${RPM_BUILD_ROOT}%{_mandir}/man1/
 install -m 644 %{SOURCE1} ${RPM_BUILD_ROOT}%{_mandir}/man1/
 
