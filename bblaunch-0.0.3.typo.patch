@@ -1,0 +1,11 @@
+--- bblaunch-0.0.3/bblaunch.c.typo	2002-05-07 06:35:57.000000000 +0200
++++ bblaunch-0.0.3/bblaunch.c	2005-04-02 19:09:42.637976042 +0200
+@@ -326,7 +326,7 @@
+ 	fprintf (stderr,
+ 			"  -i --iconic                      launch iconic\n");
+ 	fprintf (stderr,
+-			"  -w --workspace <workspace>       specify initialworkspace\n");
++			"  -w --workspace <workspace>       specify initial workspace\n");
+ 	fprintf (stderr,
+ 			"  -k --stack <stack>               specify stack placement\n");
+ 	fprintf (stderr,
