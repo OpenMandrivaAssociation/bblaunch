@@ -1,0 +1,66 @@
+.TH BBLAUNCH 1 "August 2001"
+.SH NAME
+bblaunch \- launch manipulated windows under blackbox.
+.SH SYNOPSIS
+.B bblaunch [\fIOPTIONS\fR] [\fICOMMAND\fR]
+.SH DESCRIPTION
+.PP
+bblaunch is a small application which allows you to manipulate the attributes of windows. bblaunch is unable to frob the attributes of already created windows, so you must pass the name of the program to bblaunch along with the options you want the window to be created with. Keep in mind that you must be running the Blackbox window manager for any of this to work. 
+.br
+If you are experiencing problems, it's probably because the window took more than a second to map. Please read below under the '-p' option for details.
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+.TP
+.B \-?, \-\-help
+Show summary of options.
+.TP
+.B \-v, \-\-maxvert
+Vertically maximized.
+.TP
+.B \-h, \-\-manhorz
+Horizontally maximized.
+.TP
+.B \-s, \-\-shaded
+Start window shaded.
+.TP
+.B \-o, \-\-omnipresent
+Omnipresent window.
+.TP
+.B \-w, \-\-workspace <workspace>
+Specify initial workspace.
+.TP
+.B \-k, \-\-stack <stack>
+Specify stack placement.
+.br
+0 - Always on top.
+.br
+1 - Normal.
+.br
+2 - Always on bottom.
+.TP
+.B \-d, \-\-decor <decorations>
+Specify window decorations.
+.br
+0 - No decorations.
+.br
+1 - Normal decorations.
+.br
+2 - Tiny decorations.
+.br
+3 - Tool decorations.
+.TP
+.B \-p, \-\-pause <milliseconds>
+Time Blackbox will wait for the window to map. This option defaults to one second, and has no affect on the windows attributes, but merely controls how long Blackbox will wait to change the attributes before leaving the window alone. If you are unable to change the attributes of the window because it is taking too long to load, try passing a large parameter here, and working down.
+.br
+.SH SEE ALSO
+.BR blackbox (1).
+.TP
+http://j38.net/projects/bblaunch
+.br
+.SH AUTHOR
+bblaunch is a Scott J. Garner <mrfab@arn.net> production.
+.br
+This manual page was written by Kyle McMartin <kyle@debian.org>,
+for the Debian GNU/Linux system (but may be used by others).

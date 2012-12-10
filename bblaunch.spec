@@ -44,3 +44,42 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
+
+
+%changelog
+* Wed Feb 02 2011 Funda Wang <fwang@mandriva.org> 0.0.3-8mdv2011.0
++ Revision: 635005
+- rebuild
+- tighten BR
+
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0.3-7mdv2011.0
++ Revision: 616742
+- the mass rebuild of 2010.0 packages
+
+* Tue Sep 01 2009 Thierry Vignaud <tv@mandriva.org> 0.0.3-6mdv2010.0
++ Revision: 424022
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 0.0.3-5mdv2009.0
++ Revision: 240442
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Wed Aug 15 2007 Pascal Terjan <pterjan@mandriva.org> 0.0.3-3mdv2008.0
++ Revision: 63758
+- Import bblaunch
+
+
+
+* Fri Dec 23 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.0.3-3mdk
+- Fix BuildRequires
+- use mkrel
+
+* Fri Oct 21 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.0.3-2mdk
+- Fix BuildRequires
+
+* Sat Apr  2 2005 Olivier Blin <oblin@mandrakesoft.com> 0.0.3-1mdk
+- initial Mandrakelinux release (Patch0 and man page from Debian)
