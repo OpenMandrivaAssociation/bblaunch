@@ -1,6 +1,6 @@
 %define name bblaunch
 %define version 0.0.3
-%define release %mkrel 8
+%define release  9
 
 Summary: An application launcher for Blackbox type window managers
 Name: %{name}
@@ -12,7 +12,6 @@ Patch0: bblaunch-0.0.3.typo.patch
 License: GPL
 Group: Graphical desktop/Other
 Url: http://blackboxwm.sourceforge.net/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: pkgconfig(x11)
 
 %description
