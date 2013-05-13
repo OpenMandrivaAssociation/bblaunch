@@ -13,7 +13,7 @@ License: GPL
 Group: Graphical desktop/Other
 Url: http://blackboxwm.sourceforge.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: libx11-devel
+BuildRequires: pkgconfig(x11)
 
 %description
 bblaunch is an application launcher that lets you set certain blackbox related
